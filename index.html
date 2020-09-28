@@ -12,14 +12,14 @@
     />
     <link rel="stylesheet" href="static/css/style.css">
 </head>
-<body>
+<body class="bg-dark"> 
     <div class="wrapper">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
             <a class="navbar-brand" href="index.html">UFO Sightings</a>
         </nav>
     </div>
     <div class="jumbotron">
-        <h1>The Truth Is Out There</h1>
+        <h1 class="display-4">The Truth Is Out There</h1>
     </div>
     <div class="container-fluid">
         <div class="row">
@@ -55,13 +55,28 @@
         <div class="row">
             <div class="col-md-3">
                 <form>
-                    <p>Filter Search</p>
+                    <p class="bg-dark">Filter Search</p>
                 </form>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <label for="date">Enter Date</label>
+                <ul class="bg-dark" class="list-group">
+                    <li class="bg-dark" class="list-group-item">
+                        <label for="date" class="bg-dark">Enter Date</label>
                         <input type="text" placeholder="1/10/2010" id="datetime" />
-                        <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                    </li>
+                    <li class="bg-dark" class="list-group-item">
+                        <label for="city" class="bg-dark">Enter a City</label>
+                        <input type="text" placeholder="roswell" id="city" />
+                    </li>
+                    <li class="bg-dark" class="list-group-item">
+                        <label for="state" class="bg-dark">Enter a State</label>
+                        <input type="text" placeholder="ca" id="state" />
+                    </li>
+                    <li class="bg-dark" class="list-group-item">
+                        <label for="country" class="bg-dark">Enter a Country</label>
+                        <input type="text" placeholder="us" id="country" />
+                    </li>
+                    <li class="bg-dark" class="list-group-item">
+                        <label for="shape" class="bg-dark">Enter a Shape</label>
+                        <input type="text" placeholder="circle" id="shape" />
                     </li>
                 </ul>
             </div>
@@ -83,5 +98,8 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="static/js/data.js"></script>
+    <script src="static/js/app.js"></script>
 </body>
 </html>
